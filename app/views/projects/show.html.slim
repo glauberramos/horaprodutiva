@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @project.name
+p
+  strong Description:
+  = @project.description
+p
+  strong Final date:
+  = @project.final_date
+p
+  strong Video url:
+  = @project.video_url
+p
+  strong Image url:
+  = @project.image_url
+
+= link_to 'Edit', edit_project_path(@project)
+'|
+= link_to 'Back', projects_path
