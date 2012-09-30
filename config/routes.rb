@@ -1,4 +1,8 @@
 Horaprodutiva::Application.routes.draw do
+  resources :tags
+
+  resources :microtasks
+
   resources :projects
 
   # The priority is based upon order of creation:

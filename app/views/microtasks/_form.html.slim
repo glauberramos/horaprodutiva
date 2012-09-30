@@ -1,0 +1,12 @@
+= form_for @microtask do |f|
+  - if @microtask.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@microtask.errors.count, "error")} prohibited this microtask from being saved:"
+      ul
+        - @microtask.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :description
+    = f.text_field :description
+  .actions = f.submit 'Save'

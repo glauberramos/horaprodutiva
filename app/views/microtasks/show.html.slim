@@ -1,0 +1,9 @@
+p#notice = notice
+
+p
+  strong Description:
+  = @microtask.description
+
+= link_to 'Edit', edit_microtask_path(@microtask)
+'|
+= link_to 'Back', microtasks_path

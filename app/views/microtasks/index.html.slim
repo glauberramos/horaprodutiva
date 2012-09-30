@@ -1,0 +1,19 @@
+h1 Listing microtasks
+
+table
+  tr
+    th Description
+    th
+    th
+    th
+
+  - @microtasks.each do |microtask|
+    tr
+      td = microtask.description
+      td = link_to 'Show', microtask
+      td = link_to 'Edit', edit_microtask_path(microtask)
+      td = link_to 'Destroy', microtask, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Microtask', new_microtask_path
