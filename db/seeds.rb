@@ -8,8 +8,8 @@
 
 # this might be bad design
 # we're coupling db with localization
-tags = Tags.create([
+tags = Tag.create([
 	{:name => 'Social'},
-	{:name => 'Informática'},
+	{:name => 'Informatica'},
 	{:name => 'Arte'}
 	]);

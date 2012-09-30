@@ -6,6 +6,7 @@ class CreateProjects < ActiveRecord::Migration
       t.date :final_date
       t.string :video_url
       t.string :image_url
+      t.references :tag
 
       t.timestamps
     end

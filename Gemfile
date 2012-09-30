@@ -12,6 +12,7 @@ gem 'activerecord-postgresql-adapter'
 # Front end stuff
 gem 'slim'
 gem 'slim-rails'
+gem 'simple_form'
 
 # Gems used only for assets and not required
 # in production environments by default.
