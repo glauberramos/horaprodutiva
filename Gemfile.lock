@@ -120,6 +120,7 @@ DEPENDENCIES
   activerecord-postgresql-adapter
   coffee-rails (~> 3.2.1)
   jquery-rails
+  pg
   rails (= 3.2.5)
   sass-rails (~> 3.2.3)
   simple_form
