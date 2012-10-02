@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20120930012009) do
     t.date     "final_date"
     t.string   "video_url"
     t.string   "image_url"
+    t.integer  "tag_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -36,6 +37,7 @@ ActiveRecord::Schema.define(:version => 20120930012009) do
 
   create_table "tags", :force => true do |t|
     t.string   "name"
+    t.integer  "project_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
