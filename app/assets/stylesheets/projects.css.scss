@@ -1,3 +1,33 @@
-// Place all the styles related to the Projects controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "colors";
+
+#create-project {
+	float: left;
+	width: 100%;
+	background: $light-grey;
+
+	#menu {
+		height: 40px;
+		background: $pink;
+		border-top: 3px solid $border-pink;
+
+		#menu-links {
+			width: 70%;
+			margin: 0 auto;
+		}
+
+		a {
+			border-right: 2px solid $pink;
+			color: white;
+			float: left;
+			margin-left: 5%;
+			padding-right: 2%;
+			padding-left: 1%;
+			height: 40px;
+
+			&:hover {
+				background: $dark-pink;
+				border-right: 2px solid $light-pink;
+			}
+		}
+	}
+}
