@@ -46,6 +46,18 @@
 		height: 60px;
 	}
 
+	#project_tag_ids {
+		width: 30%;
+		outline: 0;
+		border: 0;
+		border-radius: 5px;
+		font-size: 1.2em;
+	}
+
+	select.date.optional {
+		font-size: 1.2em;
+	}
+
 	#project-form {
 		padding-top: 3%;
 		color: $pink;
