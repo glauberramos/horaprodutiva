@@ -6,11 +6,11 @@
 	background: $light-grey;
 
 	#menu {
-		height: 40px;
 		background: $pink;
 		border-top: 3px solid $shinny-pink;
 
 		#menu-links {
+			display: table;
 			width: 70%;
 			margin: 0 auto;
 		}
@@ -44,6 +44,10 @@
 		border-radius: 7px;
 		outline: 0;
 		border: 0;
+		font-size: 1.2em;
+
+		box-shadow: inner 0 0 5px #888;
+		-webkit-box-shadow: inset 0 1px 3px #888;
 	}
 
 	input[type=text], input[type="url"] {
