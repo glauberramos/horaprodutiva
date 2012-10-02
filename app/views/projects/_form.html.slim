@@ -12,10 +12,10 @@
           - @project.errors.full_messages.each do |message|
             li = message
 
-    = f.input :name, :label => 'Qual o nome do seu projeto?'
-    = f.input :description, :label => 'Descreva o seu projeto e como ele vai funcionar:'
-    = f.input :final_date, :label => 'O seu projeto possui uma data final?'
-    = f.input :video_url
-    = f.input :image_url
+    = f.input :name, :placeholder => 'Qual o nome do seu projeto?', :label => false
+    = f.input :description, :placeholder => 'Descreva o seu projeto e como ele vai funcionar.', :label => false
+    = f.input :image_url, :placeholder => 'Insira a URL da imagem do seu projeto.', :label => false
+    = f.input :video_url, :placeholder => 'Insira a URL do video do seu projeto.', :label => false
+    = f.input :final_date, :placeholder => 'O seu projeto possui uma data final?', :label => 'O seu projeto possuí uma data final?' 
     = f.association :tags, :label => 'Em qual categoria o seu projeto se encaixa melhor?'
     = f.button :submit

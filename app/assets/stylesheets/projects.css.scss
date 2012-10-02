@@ -36,6 +36,7 @@
 
 	textarea {
 		height: 200px;
+		padding-top: 2%; 
 	}
 
 	input[type=text], input[type="url"], textarea {
@@ -43,8 +44,10 @@
 		width: 100%;
 		border-radius: 7px;
 		outline: 0;
-		border: 0;
-		font-size: 1.2em;
+		border: 1px solid #999;
+		font-size: 1.4em;
+		padding-left: 3%;
+		color: $pink;
 
 		box-shadow: inner 0 0 5px #888;
 		-webkit-box-shadow: inset 0 1px 3px #888;
@@ -57,7 +60,6 @@
 	input[type=submit] {
 		width: 25%;
 		display: block;
-		margin: 0 auto;
 		background: $shinny-pink;
 		border: 0;
 		height: 40px;
@@ -65,7 +67,7 @@
 		color: white;
 		font-size: 1.2em;
 		text-shadow: 0px 2px #555;
-		margin-top: 8%;
+		margin: 8% auto;
 		box-shadow: 2px 2px 2px #777;
 
 		&:hover {
@@ -78,16 +80,27 @@
 	}
 
 	#project_tag_ids {
-		width: 30%;
+		width: 20%;
+		padding: 2%;
 		outline: 0;
 		border: 0;
 		border-radius: 5px;
 		font-size: 1.2em;
+		margin-top: 2%;
+		border: 1px solid #999;
 	}
 
 	select.date.optional {
 		font-size: 1.2em;
 		margin-bottom: 5%;
+		width: 130px;
+		background: white !important;
+		outline: 0;
+		background-image: none;
+		height: 34px;
+		border: 1px solid #999;
+		margin-top: 2%;
+		color: #777;
 	}
 
 	#project-form {
