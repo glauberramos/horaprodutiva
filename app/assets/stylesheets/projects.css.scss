@@ -33,4 +33,21 @@
 			}
 		}
 	}
+
+	input[type=text], input[type="url"], textarea {
+		margin-bottom: 3%;
+		width: 100%;
+		border-radius: 7px;
+		outline: 0;
+		border: 0;
+	}
+
+	input[type=text], input[type="url"] {
+		height: 60px;
+	}
+
+	#project-form {
+		width: 70%;
+		margin: 0 auto;
+	}
 }
