@@ -26,6 +26,9 @@
 
 			&:hover {
 				background: $dark-pink;
+				background-image: url("menubg.png");
+				background-repeat: no-repeat;
+				background-position: 50% 102%;
 				border-right: 2px solid $light-pink;
 			}
 		}
