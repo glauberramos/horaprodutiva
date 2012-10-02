@@ -1,0 +1,24 @@
+@import "colors";
+
+#header {
+	height: 40px;
+	background: $grey;
+
+	#logo {
+		margin-left: 2%;
+		color: white;
+		float: left;
+		width: 10%;
+	}
+
+	#controls {
+		float: right;
+		width: 20%;
+
+		a {
+			color: $yellow;
+			margin-left: 10%;
+			float: left;
+		}
+	}
+}

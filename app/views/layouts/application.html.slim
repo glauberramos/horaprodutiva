@@ -1,0 +1,19 @@
+DOCTYPE HTML
+html
+	head
+	  	title Hora Produtiva
+	  	= stylesheet_link_tag    "application", :media => "all"
+	  	= javascript_include_tag "application"
+	  	= csrf_meta_tags
+body
+	#header
+		a#logo
+			p Hora Produtiva
+		#controls
+			a
+				p Login
+			a
+				p Registre-se
+			a
+				p Sobre
+= yield
