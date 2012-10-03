@@ -6,7 +6,8 @@
 	background: $light-grey;
 
 	#menu {
-		background: $pink;
+		background: $pink-menu;
+		background-image: url('bg-noise.png');
 		border-top: 3px solid $shinny-pink;
 
 		#menu-links {
@@ -16,7 +17,8 @@
 		}
 
 		a {
-			border-right: 2px solid $pink;
+			border-right: 2px solid transparent;
+			border-left: 2px solid transparent;
 			color: white;
 			float: left;
 			padding: 0 3%;
@@ -28,6 +30,7 @@
 				background-repeat: no-repeat;
 				background-position: 50% 102%;
 				border-right: 2px solid $light-pink;
+				border-left: 2px solid $light-pink;
 			}
 		}
 	}
