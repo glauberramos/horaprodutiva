@@ -1,6 +1,6 @@
 @import "colors";
 
-#create-project {
+#create-project, #edit-project {
 	float: left;
 	width: 100%;
 	background: $light-grey;
@@ -13,11 +13,24 @@
 		background: $pink-menu;
 		background-image: url('bg-noise.png');
 		border-top: 3px solid $shinny-pink;
+		width: 100%;
 
 		#menu-links {
+			list-style: none;
 			display: table;
 			width: 70%;
 			margin: 0 auto;
+		}
+
+		li:hover, li.active {
+			a {
+				background: $dark-pink;
+				background-image: url("menubg.png");
+				background-repeat: no-repeat;
+				background-position: 50% 102%;
+				border-right: 2px solid $light-pink;
+				border-left: 2px solid $light-pink;
+			}
 		}
 
 		a {
@@ -29,16 +42,7 @@
 			color: white;
 			float: left;
 			padding: 0 3%;
-			height: 40px;
-
-			&:hover {
-				background: $dark-pink;
-				background-image: url("menubg.png");
-				background-repeat: no-repeat;
-				background-position: 50% 102%;
-				border-right: 2px solid $light-pink;
-				border-left: 2px solid $light-pink;
-			}
+			height: 40px;			
 		}
 	}
 
@@ -199,5 +203,47 @@
 			background-position: 1%;
 		}
 
+		#tasks-area {
+			margin-bottom: 15%;
+		}
+	}
+
+	#colaboration {
+		width: 100%;
+		display: table;
+		background: $dark-blue;
+
+		#colaboration-form {
+			width: 60%;
+			margin: 0 auto;
+		}
+
+		.email {
+			color: white;
+			width: 40%;
+			display: block;
+			float: left;
+			font-size: 1.2em;
+			border-radius: 7px;
+			padding-left: 5%;
+			line-height: 3em;
+			background-image: url("email.png");
+			background-repeat: no-repeat;
+			background-position: 1%;
+		}
+
+		.email-note {
+			line-height: 3em;
+			font-size: 1.2em;
+			width: 30%;
+			display: block;
+			color: $shinny-pink;
+			float: left;
+		}
+
+		#emails-area {
+			margin-bottom: 5%;
+			display: table;
+		}
 	}
 }

@@ -37,5 +37,17 @@
         #tasks-area
           .task Comprar domínio para o site Vila Pinto.
           .task Criar conta no github e criar repositório.
+      #colaboration
+        #colaboration-form
+          #colaboration-header
+            h1 3.
+            .name Fulano
+            h1 , aposto que seus amigos gostariam de ajudar você!
+          #create-email-area
+            = f.input :name, :placeholder => 'Digite o email das pessoas que podem ajudar você nesse projeto', :label => false
+          #emails-area
+            .email glauberamos@gmail.com
+            .email-note receberá o seu convite!
+            .email diogoriba@gmail.com
+            .email-note receberá o seu convite!
           = f.button :submit
-         

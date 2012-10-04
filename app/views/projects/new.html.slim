@@ -1,9 +1,12 @@
 #create-project
 	#menu
-		#menu-links
-			= link_to "1.0 O PROJETO", "#project-information"
-			= link_to "2.CUSTOMIZAÇÃO", "#customization"
-			= link_to "3.MICROTAREFAS", "#micro-tasks"
-			= link_to "4.CONVIDE COLABORADORES", "#colaborators"
-
+		ul#menu-links.nav
+			li.active
+				= link_to "1.O PROJETO", "#project-information", class: "anchor-link"
+			li
+				= link_to "2.CUSTOMIZAÇÃO", "#customization", class: "anchor-link"
+			li
+				= link_to "3.MICROTAREFAS", "#micro-tasks", class: "anchor-link"
+			li
+				= link_to "4.CONVIDE COLABORADORES", "#colaboration", class: "anchor-link"
 	== render 'form'
