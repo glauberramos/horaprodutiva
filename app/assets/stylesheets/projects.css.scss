@@ -141,12 +141,17 @@
 	#project-information {
 		width: 60%;
 		margin: 0 auto;
+		margin-bottom: 5%;
 	}
 
 	#customization {
 		width: 100%;
 		display: table;
 		background: $dark-blue;
+
+		h1, .name {
+			margin-top: 5%;
+		}
 
 		#customization-header {
 			display: table;
@@ -158,12 +163,15 @@
 			width: 60%;
 			margin: 0 auto;
 			display: table;
-			background: $darkest-blue;
+			
 		}
 
 		#drop-area {
+			background: $darkest-blue;
 			text-align: center;
 			padding: 15%;
+			margin:	5% 0;
+			border-radius: 5px;
 
 			p {
 				font-size: 1.1em;

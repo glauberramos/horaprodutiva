@@ -24,8 +24,10 @@
           .name Fulano
         #image-area
           #drop-area
+            img src="../assets/image-icon.png"
             p ARRESTE E SOLTE SUA IMAGEM AQUI
             p ou clique e selecione de um local no seu computador
-            = f.input :image_url, :placeholder => 'Insira a URL da imagem do seu projeto.', :label => false
+          = f.input :image_url, :placeholder => 'Insira a URL da imagem do seu projeto.', :label => false
+
           = f.button :submit
          
