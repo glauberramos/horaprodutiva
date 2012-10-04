@@ -1,21 +1,31 @@
 #project-form
-  #user-name 
-    h1 1. 
-    .name Fulano 
-    h1 conte-nos sobre seu projeto... (:
+    
 
-  = simple_form_for @project do |f|
-    - if @project.errors.any?
-      #error_explanation
-        h2 = "#{pluralize(@project.errors.count, "error")} prohibited this project from being saved:"
-        ul
-          - @project.errors.full_messages.each do |message|
-            li = message
-
-    = f.input :name, :placeholder => 'Qual o nome do seu projeto?', :label => false
-    = f.input :description, :placeholder => 'Descreva o seu projeto e como ele vai funcionar.', :label => false
-    = f.input :image_url, :placeholder => 'Insira a URL da imagem do seu projeto.', :label => false
-    = f.input :video_url, :placeholder => 'Insira a URL do video do seu projeto.', :label => false
-    = f.input :final_date, :placeholder => 'O seu projeto possui uma data final?', :label => 'O seu projeto possuí uma data final?' 
-    = f.association :tags, :label => 'Em qual categoria o seu projeto se encaixa melhor?'
-    = f.button :submit
+    = simple_form_for @project do |f|
+      - if @project.errors.any?
+        #error_explanation
+          h2 = "Ocorreu #{pluralize(@project.errors.count, "erro")} na criação de seu projeto. Dê uma olhada para ver o que foi:"
+          ul
+            - @project.errors.full_messages.each do |message|
+              li = message
+      #project-information
+        #user-name 
+          h1 1. 
+          .name Fulano 
+          h1 conte-nos sobre seu projeto... (:
+        = f.input :name, :placeholder => 'Qual o nome do seu projeto?', :label => false
+        = f.input :description, :placeholder => 'Descreva o seu projeto e como ele vai funcionar.', :label => false
+        = f.input :video_url, :placeholder => 'Insira a URL do video do seu projeto.', :label => false
+        = f.input :final_date, :placeholder => 'O seu projeto possui uma data final?', :label => 'O seu projeto possuí uma data final?' 
+        = f.association :tags, :label => 'Em qual categoria o seu projeto se encaixa melhor?'
+      #customization
+        #customization-header
+          h1 2.Selecione uma imagem legal para o seu projeto 
+          .name Fulano
+        #image-area
+          #drop-area
+            p ARRESTE E SOLTE SUA IMAGEM AQUI
+            p ou clique e selecione de um local no seu computador
+            = f.input :image_url, :placeholder => 'Insira a URL da imagem do seu projeto.', :label => false
+          = f.button :submit
+         

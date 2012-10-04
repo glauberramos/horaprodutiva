@@ -107,7 +107,6 @@
 	#project-form {
 		padding-top: 3%;
 		color: $pink;
-		width: 60%;
 		margin: 0 auto;
 
 		.name, h1 {
@@ -136,6 +135,40 @@
 			margin-top: 1%;
 			margin-bottom: 0.5em;
 			display: block;
+		}
+	}
+
+	#project-information {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	#customization {
+		width: 100%;
+		display: table;
+		background: $dark-blue;
+
+		#customization-header {
+			display: table;
+			width: 60%;
+			margin: 0 auto;
+		}
+
+		#image-area {
+			width: 60%;
+			margin: 0 auto;
+			display: table;
+			background: $darkest-blue;
+		}
+
+		#drop-area {
+			text-align: center;
+			padding: 15%;
+
+			p {
+				font-size: 1.1em;
+				color: $letter-blue;
+			}
 		}
 	}
 }
