@@ -32,7 +32,10 @@
           h1 3.Como as pessoas vão poder ajudar a
           .name Fulano
           h1 ?
-        #image-area
-
+        #create-task-area
+          = f.input :name, :placeholder => 'O que você precisa para o seu projeto?', :label => false
+        #tasks-area
+          .task Comprar domínio para o site Vila Pinto.
+          .task Criar conta no github e criar repositório.
           = f.button :submit
          

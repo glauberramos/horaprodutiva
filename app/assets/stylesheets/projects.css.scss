@@ -185,5 +185,19 @@
 		display: table;
 		margin: 0 auto;
 
+		.task {
+			background: $shinny-pink;
+			color: white;
+			width: 93.5%;
+			font-size: 1.2em;
+			margin-bottom: 3%;
+			border-radius: 7px;
+			padding-left: 10%;
+			line-height: 3.5em;
+			background-image: url("done.png");
+			background-repeat: no-repeat;
+			background-position: 1%;
+		}
+
 	}
 }
