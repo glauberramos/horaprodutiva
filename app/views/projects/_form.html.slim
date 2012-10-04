@@ -15,7 +15,6 @@
           h1 conte-nos sobre seu projeto... (:
         = f.input :name, :placeholder => 'Qual o nome do seu projeto?', :label => false
         = f.input :description, :placeholder => 'Descreva o seu projeto e como ele vai funcionar.', :label => false
-        = f.input :video_url, :placeholder => 'Insira a URL do video do seu projeto.', :label => false
         = f.input :final_date, :placeholder => 'O seu projeto possui uma data final?', :label => 'O seu projeto possuí uma data final?' 
         = f.association :tags, :label => 'Em qual categoria o seu projeto se encaixa melhor?'
       #customization
@@ -28,6 +27,12 @@
             p ARRESTE E SOLTE SUA IMAGEM AQUI
             p ou clique e selecione de um local no seu computador
           = f.input :image_url, :placeholder => 'Insira a URL da imagem do seu projeto.', :label => false
+      #micro-tasks
+        #micro-tasks-header
+          h1 3.Como as pessoas vão poder ajudar a
+          .name Fulano
+          h1 ?
+        #image-area
 
           = f.button :submit
          

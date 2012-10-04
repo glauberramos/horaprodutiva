@@ -5,6 +5,10 @@
 	width: 100%;
 	background: $light-grey;
 
+	h1, .name {
+		margin-top: 5%;
+	}
+
 	#menu {
 		background: $pink-menu;
 		background-image: url('bg-noise.png');
@@ -17,6 +21,9 @@
 		}
 
 		a {
+			text-decoration: none;
+			font-size: 0.9em;
+  			line-height: 40px;
 			border-right: 2px solid transparent;
 			border-left: 2px solid transparent;
 			color: white;
@@ -105,7 +112,6 @@
 	}
 
 	#project-form {
-		padding-top: 3%;
 		color: $pink;
 		margin: 0 auto;
 
@@ -114,7 +120,6 @@
 			font-size: 1.5em;
 			color: $blue;
 			line-height: 18px;
-			margin: 13px 0;
 			margin-right: 5px;
 			margin-bottom: 5%;
 			font-weight: bold;
@@ -149,10 +154,6 @@
 		display: table;
 		background: $dark-blue;
 
-		h1, .name {
-			margin-top: 5%;
-		}
-
 		#customization-header {
 			display: table;
 			width: 60%;
@@ -163,14 +164,13 @@
 			width: 60%;
 			margin: 0 auto;
 			display: table;
-			
 		}
 
 		#drop-area {
 			background: $darkest-blue;
 			text-align: center;
 			padding: 15%;
-			margin:	5% 0;
+			margin-bottom: 5%;
 			border-radius: 5px;
 
 			p {
@@ -178,5 +178,12 @@
 				color: $letter-blue;
 			}
 		}
+	}
+
+	#micro-tasks {
+		width: 60%;
+		display: table;
+		margin: 0 auto;
+
 	}
 }

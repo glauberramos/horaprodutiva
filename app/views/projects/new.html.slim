@@ -1,13 +1,9 @@
 #create-project
 	#menu
 		#menu-links
-			a
-				p 1.O PROJETO
-			a
-				p 2.CUSTOMIZAÇÃO
-			a
-				p 3.MICROTAREFAS
-			a
-				p 4.CONVIDE COLABORADORES
+			= link_to "1.0 O PROJETO", "#project-information"
+			= link_to "2.CUSTOMIZAÇÃO", "#customization"
+			= link_to "3.MICROTAREFAS", "#micro-tasks"
+			= link_to "4.CONVIDE COLABORADORES", "#colaborators"
 
 	== render 'form'
