@@ -69,28 +69,6 @@
 		height: 60px;
 	}
 
-	input[type=submit] {
-		width: 25%;
-		display: block;
-		background: $shinny-pink;
-		border: 0;
-		height: 40px;
-		border-radius: 5px;
-		color: white;
-		font-size: 1.2em;
-		text-shadow: 0px 2px #555;
-		margin: 8% auto;
-		box-shadow: 2px 2px 2px #777;
-
-		&:hover {
-			background: $dark-pink;
-		}
-
-		&:active {
-			box-shadow: none;
-		}
-	}
-
 	#project_tag_ids {
 		width: 20%;
 		padding: 2%;
@@ -188,20 +166,6 @@
 		width: 60%;
 		display: table;
 		margin: 0 auto;
-
-		.task {
-			background: $shinny-pink;
-			color: white;
-			width: 93.5%;
-			font-size: 1.2em;
-			margin-bottom: 3%;
-			border-radius: 7px;
-			padding-left: 10%;
-			line-height: 3.5em;
-			background-image: url("done.png");
-			background-repeat: no-repeat;
-			background-position: 1%;
-		}
 
 		#tasks-area {
 			margin-bottom: 15%;
