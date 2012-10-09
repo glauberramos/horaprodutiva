@@ -14,6 +14,6 @@ class Project < ActiveRecord::Base
   end
 
   def tag_name=(name)
-  	self.tag = Tag.find_by_name(name) unless name.blank?
+  	self.tag = Tag.find_or_create_by_name(name) unless name.blank?
   end
 end
