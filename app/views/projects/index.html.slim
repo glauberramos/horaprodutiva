@@ -19,7 +19,7 @@ table
       td = project.final_date
       td = project.video_url
       td = project.image_url
-      td = project.tags[0].name
+      td = project.tag.name
 
       td = link_to 'Show', project
       td = link_to 'Edit', edit_project_path(project)
