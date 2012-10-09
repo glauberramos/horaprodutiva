@@ -3,6 +3,10 @@ Horaprodutiva::Application.routes.draw do
 
   resources :microtasks
 
+  resources :projects do
+    get :autocomplete_tag_name, :on => :collection
+  end
+
   resources :projects
 
   root to: 'projects#index'

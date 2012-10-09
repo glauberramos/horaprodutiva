@@ -1,5 +1,5 @@
-
 class ProjectsController < ApplicationController
+  autocomplete :tag, :name
   # GET /projects
   # GET /projects.json
   def index
