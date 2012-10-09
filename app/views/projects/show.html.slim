@@ -17,7 +17,7 @@ p
   = @project.image_url
 p
   strong Category:
-  = @project.tags[0].name
+  = @project.tag.name
 
 = link_to 'Edit', edit_project_path(@project)
 '|
