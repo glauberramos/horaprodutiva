@@ -15,6 +15,9 @@ gem 'slim-rails'
 gem 'simple_form'
 gem 'rails3-jquery-autocomplete'
 
+group :test do
+	gem 'rake'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.

@@ -134,6 +134,7 @@ DEPENDENCIES
   pg
   rails (= 3.2.5)
   rails3-jquery-autocomplete
+  rake
   sass-rails (~> 3.2.3)
   simple_form
   slim
