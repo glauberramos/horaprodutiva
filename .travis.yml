@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 1.9.3
 
- before_script:
+before_script:
   - psql -c 'create database horaprodtest;' -U postgres
   - rake db:migrate
   - rake db:test:prepare
