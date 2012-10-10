@@ -1,5 +1,5 @@
 before_script:
-  - psql -c 'create user horaprod with password "horaprod"';
+  - psql -c 'create user horaprod with password "horaprod";' -U postgres
   - psql -c 'create database horaprodtest with owner horaprod;' -U postgres
 language: ruby
 rvm:
