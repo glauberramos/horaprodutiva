@@ -10,26 +10,29 @@
 	}
 
 	h1 {
+		font-weight: 300;
 		margin: 0 auto;
 		margin-bottom: 3%;
+		font-size: 3em;
 	}
 
 	#search {
 		padding: 5%;
-		background: $dark-grey;
+		background: $background-grey;
 
 		h1 {
 			color: $shinny-pink;
-			width: 430px;
+			width: 600px;
 		}
 
 		h2 {
-			color: $grey;
+			color: $header-grey;
 			width: 300px;
 		}
 
 		input {
-			width: 430px;
+			width: 600px;
+			border-radius: 5px;
 			margin: 0 auto;
 			display: block;
 		}
@@ -50,17 +53,16 @@
 	#hot-projects {
 		float: left;
 		width: 100%;
-		padding: 5%;
-		background: $dark-grey;
+		padding: 5% 0;
 
 		h1 {
-			width: 600px;
+			width: 790px;
 			color: $blue;
 		}
 
 		h2 {
 			width: 300px;
-			color: $grey;
+			color: $header-grey;
 		}
 	}
 }
