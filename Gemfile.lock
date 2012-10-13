@@ -80,8 +80,6 @@ GEM
       activesupport (= 3.2.5)
       bundler (~> 1.0)
       railties (= 3.2.5)
-    rails3-jquery-autocomplete (1.0.9)
-      rails (~> 3.0)
     railties (3.2.5)
       actionpack (= 3.2.5)
       activesupport (= 3.2.5)
@@ -133,7 +131,6 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (= 3.2.5)
-  rails3-jquery-autocomplete
   rake
   sass-rails (~> 3.2.3)
   simple_form
