@@ -1,6 +1,4 @@
 #project-form
-    
-
     = simple_form_for @project do |f|
       - if @project.errors.any?
         #error_explanation
@@ -16,7 +14,7 @@
         = f.input :name, :placeholder => 'Qual o nome do seu projeto?', :label => false
         = f.input :description, :placeholder => 'Descreva o seu projeto e como ele vai funcionar.', :label => false
         = f.input :final_date, :placeholder => 'O seu projeto possui uma data final?', :label => 'O seu projeto possuí uma data final?' 
-        = f.autocomplete_field :tag_name, autocomplete_tag_name_projects_path, :placeholder => 'Em qual categoria seu projeto de encaixa melhor?'
+        = f.input :tag_tokens, :label => 'Tags', :input_html => { 'data-pre' => @project.tags.map.to_json }
       #customization
         #customization-header
           h1 2.Selecione uma imagem legal para o seu projeto 

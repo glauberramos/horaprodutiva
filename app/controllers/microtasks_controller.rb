@@ -1,4 +1,3 @@
-
 class MicrotasksController < ApplicationController
   # GET /microtasks
   # GET /microtasks.json

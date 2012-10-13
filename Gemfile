@@ -13,7 +13,6 @@ gem 'activerecord-postgresql-adapter'
 gem 'slim'
 gem 'slim-rails'
 gem 'simple_form'
-gem 'rails3-jquery-autocomplete'
 
 group :test do
 	gem 'rake'

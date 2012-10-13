@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // scrollspy
   $("nav a").anchorAnimate();
   $('#menu-links').scrollspy();
 
@@ -22,5 +23,16 @@ $(document).ready(function() {
     $('body,html').animate({ scrollTop: sessionPosition }, 500, function() {
         window.location.hash = session;
     });
+  });
+
+  // jquery-tokeninput
+  var tag_field_id = '#project_tag_tokens';
+
+  $(tag_field_id).tokenInput("/tags.json", {
+    crossDomain: false,
+    allowFreeTagging: true,
+    tokenValue: 'name',
+    theme: 'facebook',
+    prepopulate: $(tag_field_id).data('pre')
   });
 });
