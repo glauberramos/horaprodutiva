@@ -1,6 +1,5 @@
 $(document).ready(function() {
   // scrollspy
-  $("nav a").anchorAnimate();
   $('#menu-links').scrollspy();
 
   $(window).scroll(function() {
