@@ -7,13 +7,10 @@ html
 	  	= csrf_meta_tags
 body data-spy="scroll" data-target="#menu"
 	#header
-		a#logo
-			p HORA PRODUTIVA
+		= link_to "Hora Produtiva", root_path, id: 'logo'
 		#controls
-			a
-				p Login
-			a
-				p Registre-se
-			a
-				p Sobre
+			= link_to "Projetos", projects_path
+			= link_to "Blog", root_path
+			= link_to "Sobre", root_path
+			= link_to "Início", root_path
 = yield

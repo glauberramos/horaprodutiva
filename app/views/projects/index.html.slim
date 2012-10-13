@@ -1,34 +1,34 @@
-h1 Listing projects
+#projects
+  h1 Listing projects
 
-table
-  tr
-    th Name
-    th Description
-    th Final date
-    th Video url
-    th Image url
-    th Category
-    th
-    th
-    th
-
-  - @projects.each do |project|
+  table
     tr
-      td = project.name
-      td = project.description
-      td = project.final_date
-      td = project.video_url
-      td = project.image_url
-      td
-        ul
-          - project.tags.each do |tag|
-            li
-              = tag.name
+      th Name
+      th Description
+      th Final date
+      th Video url
+      th Image url
+      th Category
+      th
+      th
+      th
 
-      td = link_to 'Show', project
-      td = link_to 'Edit', edit_project_path(project)
-      td = link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete
+    - @projects.each do |project|
+      tr
+        td = project.name
+        td = project.description
+        td = project.final_date
+        td = project.video_url
+        td = project.image_url
+        td
+          ul
+            - project.tags.each do |tag|
+              li
+                = tag.name
 
-br
+        td = link_to 'Show', project
+        td = link_to 'Edit', edit_project_path(project)
+        td = link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete
 
-= link_to 'New Project', new_project_path
+  br
+  = link_to 'New Project', new_project_path

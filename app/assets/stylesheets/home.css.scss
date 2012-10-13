@@ -1,3 +1,66 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "colors";
+
+#home {
+	float: left;
+
+	h2 {
+		font-size: 1.2em;
+		margin: 0 auto;
+		margin-bottom: 3%;
+	}
+
+	h1 {
+		margin: 0 auto;
+		margin-bottom: 3%;
+	}
+
+	#search {
+		padding: 5%;
+		background: $dark-grey;
+
+		h1 {
+			color: $shinny-pink;
+			width: 430px;
+		}
+
+		h2 {
+			color: $grey;
+			width: 300px;
+		}
+
+		input {
+			width: 430px;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+
+	#tutorial {
+		.step {
+			width: 30%;
+			padding-top: 3%;
+			padding-bottom: 3%;
+			padding-left: 3.33333333%;
+			float: left;
+			background: $shinny-pink;
+			color: white;
+		}
+	}
+
+	#hot-projects {
+		float: left;
+		width: 100%;
+		padding: 5%;
+		background: $dark-grey;
+
+		h1 {
+			width: 600px;
+			color: $blue;
+		}
+
+		h2 {
+			width: 300px;
+			color: $grey;
+		}
+	}
+}

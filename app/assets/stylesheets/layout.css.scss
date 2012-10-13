@@ -10,6 +10,9 @@
 		color: white;
 		float: left;
 		width: 40%;
+		text-decoration: none;
+		margin: 1% 0;
+		margin-left: 3%;
 	}
 
 	#controls {
@@ -18,8 +21,10 @@
 
 		a {
 			color: $yellow;
+			margin: 2% 0;
 			margin-right: 5%;
 			float: right;
+			text-decoration: none;
 		}
 	}
 }
