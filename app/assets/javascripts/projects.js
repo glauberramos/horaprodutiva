@@ -34,4 +34,8 @@ $(document).ready(function() {
     theme: 'facebook',
     prepopulate: $(tag_field_id).data('pre')
   });
+
+  $('#project_name').change(function () {
+    $('.name.project').text($('#project_name').val());
+  });
 });
