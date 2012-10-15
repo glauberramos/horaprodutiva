@@ -1,4 +1,5 @@
 @import "colors";
+@import "compass/css3/transition";
 
 #home {
 	float: left;
@@ -58,11 +59,58 @@
 		h1 {
 			width: 800px;
 			color: $blue;
+			display: block;
 		}
 
 		h2 {
 			width: 300px;
 			color: $header-grey;
+			display: block;
+		}
+
+		#project-thumbnails {
+			float: left;
+			margin: 0 auto;
+			margin-top: 5%;
+			background: #ccc;
+		}
+
+		.group {
+			float: left;
+		}
+
+		.project-thumb {
+			background: #ccc;
+			line-height: 1em;
+			float: left;
+			overflow: hidden;
+			position: relative;
+			width: 33.33333333%;
+
+			.description {
+				position: absolute;
+				float: left;
+				top: 110%;
+				background: $orange;
+				height: 100%;
+				width: 100%;
+				opacity: 0.7;
+
+				@include transition-property(top);
+				@include transition-duration(0.7s);
+			}
+
+			img {
+				float: left;
+				width: 100%;
+				height: 100%;
+			}
+
+			&:hover {
+				.description {
+					top: 0%;
+				}
+			}
 		}
 	}
 }
