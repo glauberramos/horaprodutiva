@@ -79,6 +79,15 @@
 			float: left;
 		}
 
+		.column {
+			width: 33.333333%;
+			float: left;
+
+			.project-thumb {
+				width: 100%;
+			}
+		}
+
 		.project-thumb {
 			background: #ccc;
 			line-height: 1em;
