@@ -4,6 +4,11 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+#wrapper {
+	background: transparent url("wrapper-bg-colourstrip.png") repeat-x left top;
+	padding-top: 5px;
+}
+
 #header {
 	float: left;
 	width: 100%;
