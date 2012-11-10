@@ -1,7 +1,7 @@
 @import "colors";
 
 .task {
-	background: $shinny-pink;
+	background: $orange;
 	color: white;
 	width: 93.5%;
 	font-size: 1.2em;
@@ -17,7 +17,7 @@
 .btn {
 	width: 25%;
 	display: block;
-	background: $shinny-pink;
+	background: $orange;
 	border: 0;
 	height: 40px;
 	border-radius: 5px;
@@ -25,7 +25,6 @@
 	font-size: 1.2em;
 	text-shadow: 0px 2px #555;
 	margin: 8% auto;
-	box-shadow: 2px 2px 2px #777;
 
 	&:hover {
 		background: $dark-pink;

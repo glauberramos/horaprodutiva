@@ -4,9 +4,9 @@ class Project < ActiveRecord::Base
   has_and_belongs_to_many :tags
   attr_reader :tag_tokens
 
-  validates :tags, :presence => true
-  validates :name, :presence => true
-  validates :description, :presence => true
+  validates :tags, :presence => { :message => 'Campo nao pode ser em branco' }
+  validates :name, :presence => { :message => 'Campo nao pode ser em branco' }
+  validates :description, :presence => { :message => 'Campo nao pode ser em branco' }
 
   def tag_tokens=(ids)
     self.tags = []

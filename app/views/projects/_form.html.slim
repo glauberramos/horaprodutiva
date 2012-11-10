@@ -2,7 +2,7 @@
     = simple_form_for @project do |f|
       - if @project.errors.any?
         #error_explanation
-          h2 = "Ocorreu #{pluralize(@project.errors.count, "erro")} na criação de seu projeto. Dê uma olhada para ver o que foi:"
+          h2 = "Ocorreu #{pluralize(@project.errors.count, "erro")} na criação de seu projeto:"
           ul
             - @project.errors.full_messages.each do |message|
               li = message

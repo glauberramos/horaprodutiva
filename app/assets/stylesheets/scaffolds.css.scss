@@ -1,3 +1,5 @@
+@import "colors";
+
 body {
   background-color: #fff;
   color: #333;
@@ -33,18 +35,20 @@ div {
 }
 
 .field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table;
+  color: $error;
 }
 
 #error_explanation {
+  margin-top: 50px;
   width: 450px;
-  border: 2px solid red;
+  color: $error;
+  border: 2px solid $error;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
-  background-color: #f0f0f0;
+  background-color: $background-error;
+  margin: 0 auto;
+
   h2 {
     text-align: left;
     font-weight: bold;
@@ -52,11 +56,24 @@ div {
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0px;
-    background-color: #c00;
+    background-color: $error;
     color: #fff;
   }
+
   ul li {
     font-size: 12px;
     list-style: square;
   }
+}
+
+.error {
+  background: $background-error;
+  width: 30em;
+  height: 2em;
+  display: block;
+  border: 2px solid $error;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
